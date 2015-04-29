@@ -80,8 +80,8 @@ public class GCMIntentService extends GCMBaseIntentService {
                         .setDefaults(defaults)
                         .setSmallIcon(context.getApplicationInfo().icon)
                         .setWhen(System.currentTimeMillis())
-                        .setContentTitle(extras.getString("title"))
-                        .setTicker(extras.getString("title"))
+                        .setContentTitle("Eduvee")
+                        .setTicker("Eduvee")
                         .setContentIntent(contentIntent)
                         .setAutoCancel(true);
 
