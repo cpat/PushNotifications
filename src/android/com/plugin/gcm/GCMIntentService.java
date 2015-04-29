@@ -19,7 +19,7 @@ public class GCMIntentService extends GCMBaseIntentService {
 
     private static String TAG = "PushPlugin-GCMIntentService";
 
-    public static final String MESSAGE = "message";
+    public static final String MESSAGE = "mp_message";
 
     public GCMIntentService() {
         super("GCMIntentService");
@@ -85,7 +85,7 @@ public class GCMIntentService extends GCMBaseIntentService {
                         .setContentIntent(contentIntent)
                         .setAutoCancel(true);
 
-        String message = extras.getString("message");
+        String message = extras.getString("mp_message");
         if (message != null) {
             mBuilder.setContentText(message);
         } else {

@@ -45,7 +45,7 @@ public class NotificationService {
 
     public static final String COLLAPSE_KEY = "collapse_key";
 
-    public static final String MESSAGE = "message";
+    public static final String MESSAGE = "mp_message";
 
     public static final String MSGCNT = "msgcnt";
 
